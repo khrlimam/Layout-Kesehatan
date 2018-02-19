@@ -7,18 +7,19 @@
   <meta https-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="bootstrap/css/smartmenus.bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap/css/footer.css">
   <title>Dinas Kesehatan Kabupaten Lombok Utara</title>
   <style>
     body {
-      padding-bottom: 70px;
+      margin-top: 70px;
     }
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-static-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -103,10 +104,16 @@
             </a>
             <ul class="dropdown-menu">
               <li>
+                <a href="#">Sekretariat</a>
+              </li>
+              <li>
                 <a href="#">Kesmas</a>
               </li>
               <li>
-                <a href="#">Yankes</a>
+                <a href="#">P2PL</a>
+              </li>
+              <li>
+                <a href="#">Pelayanan Kesehatan</a>
               </li>
             </ul>
           </li>
@@ -116,10 +123,10 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#">Kesmas</a>
+                <a href="#">Rumah Sakit</a>
               </li>
               <li>
-                <a href="#">Yankes</a>
+                <a href="#">Puskesmas</a>
               </li>
             </ul>
           </li>
@@ -186,6 +193,25 @@
               </li>
             </ul>
           </li>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aplikasi
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Aplikasi 1</a>
+                </li>
+                <li>
+                  <a href="#">Aplikasi 2</a>
+                </li>
+                <li>
+                  <a href="#">Aplikasi 3</a>
+                </li>
+                <li>
+                  <a href="#">Aplikasi Lain-Lain</a>
+                </li>
+              </ul>
+            </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -207,7 +233,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="https://www.beyondwalls.blog/wp-content/uploads/2017/02/post2-entrance-1200x700-01.jpg" alt="Los Angeles">
+              <img src="./img/banners/b1.jpeg" alt="Banner">
             </div>
 
             <div class="item">
@@ -247,7 +273,7 @@
             <p>Kami menyediakan layanan konsultasi kapan aja 24x7 untuk memaksimalkan layanan kesehatan kepada seluruh masyarakat</p>
             <p>
               <a href="#" class="btn btn-success" data-toggle="modal" data-target="#deskripsiObrolanUmum">Obrolan Umum</a>
-              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#deskripsiKonsultasiPribadi">Konsultasi Pribadi</a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#deskripsiKonsultasiPribadi">Konsultasi Kesehatan</a>
               <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#deskripsiPengaduanLayanan">Pengaduan Layanan</a>
             </p>
           </div>
@@ -469,33 +495,71 @@
             <div class="panel-default panel">
               <div class="panel-heading">
                 <h3 class="panel-title">
-                  Obrolan
+                  Terhubung Dengan Kami
                 </h3>
               </div>
-              <div class="panel-body">
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="img/th2.svg" alt="...">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">Anonim</h4>
-                    Halo
-                  </div>
-                </div>
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object" src="img/th2.svg" alt="...">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h4 class="media-heading">Admin</h4>
-                    Iya, ada yang bisa dibantu?
-                  </div>
-                </div>
+              <div class="list-group">
+                <a href="#" class="list-group-item">
+                  <span class="fa fa-facebook-f text-primary"></span> Facebook</a>
+                <a href="#" class="list-group-item">
+                  <span class="fa fa-twitter text-info"></span> Twitter</a>
+                <a href="#" class="list-group-item">
+                  <span class="fa fa-instagram text-primary"></span> Instagram</a>
+                <a href="#" class="list-group-item">
+                  <span class="fa fa-google-plus text-danger"></span> Google+</a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="panel-default panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Video Kesehatan
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="./img/th.svg" alt="Thumbnail">
+            <div class="caption">
+              <h3>
+                <a href="#">Judul Video</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="./img/th.svg" alt="Thumbnail">
+            <div class="caption">
+              <h3>
+                <a href="#">Judul Video</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="./img/th.svg" alt="Thumbnail">
+            <div class="caption">
+              <h3>
+                <a href="#">Judul Video</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <img src="./img/th.svg" alt="Thumbnail">
+            <div class="caption">
+              <h3>
+                <a href="#">Judul Video</a>
+              </h3>
             </div>
           </div>
         </div>
@@ -508,26 +572,13 @@
       width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
-  <nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="footer">
     <div class="container">
-      <p class="navbar-text">&copy; Copyright Dinas Kesehatan Lombok Utara 2018</p>
-
-      <div class="navbar-right">
-        <a class="btn btn-primary navbar-btn" href="https://web.facebook.com/khyrulimam/notes?_rdc=1&_rdr" target="_blank">
-          <span class="fa fa-facebook-official"></span> FB Notes
-        </a>
-        <a class="btn btn-success navbar-btn" href="https://github.com/khyrulimam/Layout-Kesehatan/" target="_blank">
-          <span class="fa fa-github"></span> Fork code
-        </a>
-        <a href="https://twitter.com/khrl_imam" class="btn btn-info navbar-btn" target="_blank">
-          <span class="fa fa-twitter"></span> Follow
-        </a>
-        <a href="https://medium.com/@khrl_imam" class="btn btn-success navbar-btn" target="_blank">
-          <span class="fa fa-medium"></span> Writing
-        </a>
+      <div class="text-muted pull-left">
+        &copy; Copyright Dinas Kesehatan Lombok Utara
       </div>
     </div>
-  </nav>
+  </div>
 
   <!-- Modals -->
   <div class="modal fade" id="deskripsiObrolanUmum" tabindex="-1" role="dialog" aria-labelledby="deskripsiObrolanUmumLabel">
@@ -559,11 +610,12 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title" id="myModalLabel">Konsultasi Pribadi</h4>
+          <h4 class="modal-title" id="myModalLabel">Konsultasi Kesehatan</h4>
         </div>
         <div class="modal-body">
-          Konsultasi Pribadi adalah layanan konsultasi online yang ditujukan untuk menjawab pertanyaan-pertanyaan yang bersifat pribadi.
-          Tidak seperti Obrolan Umum, semua percakapan pada layanan ini hanya akan bisa dilihat oleh penanya dan admin.
+          Konsultasi Kesehatan adalah layanan konsultasi online yang ditujukan untuk menjawab pertanyaan-pertanyaan yang bersifat pribadi
+          seputar kesehatan, sebagai dukungan program berantas Gizi Buruk Pemerintah Lombok Utara. Tidak seperti Obrolan
+          Umumm, semua percakapan pada layanan ini hanya akan bisa dilihat oleh penanya dan admin.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
@@ -583,7 +635,8 @@
           <h4 class="modal-title" id="myModalLabel">Pengaduan Layanan</h4>
         </div>
         <div class="modal-body">
-          Pengaduan Layanan adalah kotak saran untuk memberikan timbal balik sebagai tolok ukur Dinas Kesehatan agar memberikan layanan lebih baik lagi
+          Pengaduan Layanan adalah kotak saran untuk memberikan timbal balik sebagai tolok ukur Dinas Kesehatan agar memberikan layanan
+          lebih baik lagi
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
