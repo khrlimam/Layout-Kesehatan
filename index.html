@@ -15,6 +15,27 @@
     body {
       margin-top: 70px;
     }
+
+    .navbar-default {
+      background-color: #1bbc9b;
+      border-color: #00a59bff;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: #fff;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover {
+      color: #fffa;
+    }
+
+    .navbar-default .navbar-brand {
+      color: #fff;
+    }
+
+    .navbar-default .navbar-brand:hover {
+      color: #fffa;
+    }
   </style>
 </head>
 
@@ -36,13 +57,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <form class="navbar-form navbar-right">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Masukkan pencarian...">
-            <span class="input-group-btn">
-              <button class="btn btn-success" type="button">
-                <i class="glyphicon glyphicon-search"></i>
-              </button>
-            </span>
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+            <span id="inputSuccess2Status" class="sr-only">(success)</span>
           </div>
           <!-- /input-group -->
         </form>
@@ -194,24 +212,24 @@
             </ul>
           </li>
           <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aplikasi
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Aplikasi 1</a>
-                </li>
-                <li>
-                  <a href="#">Aplikasi 2</a>
-                </li>
-                <li>
-                  <a href="#">Aplikasi 3</a>
-                </li>
-                <li>
-                  <a href="#">Aplikasi Lain-Lain</a>
-                </li>
-              </ul>
-            </li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aplikasi
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Aplikasi 1</a>
+              </li>
+              <li>
+                <a href="#">Aplikasi 2</a>
+              </li>
+              <li>
+                <a href="#">Aplikasi 3</a>
+              </li>
+              <li>
+                <a href="#">Aplikasi Lain-Lain</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -483,9 +501,7 @@
               <div class="list-group">
                 <a href="#" class="list-group-item">Cras justo odio</a>
                 <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
                 <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
               </div>
             </div>
           </div>
@@ -495,18 +511,23 @@
             <div class="panel-default panel">
               <div class="panel-heading">
                 <h3 class="panel-title">
-                  Terhubung Dengan Kami
+                  Kontak & Media Sosial
                 </h3>
               </div>
               <div class="list-group">
+                <a href="#" class="list-group-item">
+                  <span class="fa fa-envelope text-warning"></span> email@server.com</a>
+                <a href="#" class="list-group-item">
+                  <span class="fa fa-phone text-success"></span> (0370) 8989 8989
+                </a>
+                <a href="#peta" class="list-group-item">
+                  <span class="fa fa-map text-danger"></span> Peta</a>
                 <a href="#" class="list-group-item">
                   <span class="fa fa-facebook-f text-primary"></span> Facebook</a>
                 <a href="#" class="list-group-item">
                   <span class="fa fa-twitter text-info"></span> Twitter</a>
                 <a href="#" class="list-group-item">
                   <span class="fa fa-instagram text-primary"></span> Instagram</a>
-                <a href="#" class="list-group-item">
-                  <span class="fa fa-google-plus text-danger"></span> Google+</a>
               </div>
             </div>
           </div>
@@ -567,12 +588,9 @@
     </div>
   </div>
 
-  <div class="container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.282198428843!2d116.27552531412694!3d-8.373877686741846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdd10000023f13%3A0x78e7b74dc2a820fb!2sDinas+Kesehatan+Kabupaten+Lombok+Utara!5e0!3m2!1sen!2sid!4v1518839394907"
-      width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-
   <div class="footer">
+    <iframe id="peta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.282198428843!2d116.27552531412694!3d-8.373877686741846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdd10000023f13%3A0x78e7b74dc2a820fb!2sDinas+Kesehatan+Kabupaten+Lombok+Utara!5e0!3m2!1sen!2sid!4v1518839394907"
+      width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="container">
       <div class="text-muted text-center">
         &copy; Copyright Dinas Kesehatan Lombok Utara
@@ -592,8 +610,8 @@
         </div>
         <div class="modal-body">
           Obrolan Umum adalah layanan tanya jawab yang ditujukan untuk publik, setiap pertanyaan yang diajukan pada obrolan umum akan
-          ditampilkan secara publik, oleh karena itu semua percakapan pada obrolan umum sebaiknya tidak mengandung rincian pribadi untuk
-          menghindari ketidak nyamanan
+          ditampilkan secara publik, oleh karena itu semua percakapan pada obrolan umum sebaiknya tidak mengandung rincian
+          pribadi untuk menghindari ketidak nyamanan
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
